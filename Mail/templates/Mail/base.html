@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="{% static 'Mail/css/base.css' %}">
+
+    <title>{% block title %} {% endblock%}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-1 h1">Contact Us</span>
+    </nav>
+    {% block body %}
+    {% endblock%}
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Optional JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </body>
+</html>
